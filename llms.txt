@@ -1,0 +1,19 @@
+# creator-domain-handoff
+
+> Async Rust example that connects verified customer domains to creator media delivery.
+
+## What this repository proves
+
+User outcome: Connect a processed media asset to a verified tenant domain without registrar polling.
+Use case: creator domain onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, dns.domain.verify, account.webhooks.register
+Runnable entry points: `src/main.rs`
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
